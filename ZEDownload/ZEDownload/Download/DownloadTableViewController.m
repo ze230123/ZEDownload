@@ -9,7 +9,7 @@
 #import "DownloadTableViewController.h"
 #import "DownloadTableViewCell.h"
 #import "ZEDownloadManager.h"
-#import "Model.h"
+#import "ZEDownloadModel.h"
 
 @interface DownloadTableViewController ()
 
@@ -42,13 +42,13 @@
 }
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     DownloadTableViewCell *displayCell = (DownloadTableViewCell *)cell;
-    Model *model = ZEDownloader.downloadArr[indexPath.row];
+    ZEDownloadModel *model = ZEDownloader.downloadArr[indexPath.row];
     [displayCell setModel:model];
     
-    model.progressChanged = ^(Model *model) {
+    model.progressChanged = ^(ZEDownloadModel *model) {
         [displayCell setModel:model];
     };
-    model.stateChanged = ^(Model *model) {
+    model.stateChanged = ^(ZEDownloadModel *model) {
         [displayCell setModel:model];
         [tableView reloadData];
     };
@@ -56,30 +56,30 @@
 
 - (void)start:(UIButton *)sender {
     NSInteger index = sender.tag - 100;
-    Model *model = ZEDownloader.downloadArr[index];
+    ZEDownloadModel *model = ZEDownloader.downloadArr[index];
     
     switch (model.state) {
-        case ZEStateNone: {
+        case ZEDownloadStateNone: {
             
             break;
         }
-        case ZEStateRunning: {
+        case ZEDownloadStateRunning: {
             [ZEDownloader suspend:model];
             break;
         }
-        case ZEStateSuspended: {
+        case ZEDownloadStateSuspended: {
             [ZEDownloader resume:model];
             break;
         }
-        case ZEStateCompleted: {
+        case ZEDownloadStateCompleted: {
             NSLog(@"已下载完成，可以播放了，播放路径：%@", model.localPath);
             break;
         }
-        case ZEStateFailed: {
+        case ZEDownloadStateFailed: {
             [ZEDownloader resume:model];
             break;
         }
-        case ZEStateWaiting: {
+        case ZEDownloadStateWaiting: {
             [ZEDownloader suspend:model];
             break;
         }

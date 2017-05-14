@@ -8,7 +8,7 @@
 
 #import "HomeTableViewController.h"
 #import "HomeTableViewCell.h"
-#import "Model.h"
+#import "ZEDownloadModel.h"
 
 #import "ZEDownloadManager.h"
 @interface HomeTableViewController ()
@@ -46,13 +46,14 @@
 
 - (void)tableView:(UITableView *)tableView willDisplayCell:(UITableViewCell *)cell forRowAtIndexPath:(NSIndexPath *)indexPath {
     HomeTableViewCell *displayCell = (HomeTableViewCell *)cell;
-    Model *model = self.array[indexPath.row];
+    ZEDownloadModel *model = self.array[indexPath.row];
     [displayCell setModel:model];
 }
 
 - (void)download:(UIButton *)sender {
     NSInteger index = sender.tag - 100;
-    Model *model = self.array[index];
+    ZEDownloadModel *model = self.array[index];
+    [sender setBackgroundColor:[UIColor lightGrayColor]];
     if ([ZEDownloader isExecuted:model]) {
         
         NSLog(@"该资源正在下载");
@@ -70,7 +71,7 @@
         NSArray *urls = [self urls];
         for (int i = 0; i <= urls.count -1; i++) {
             NSString *title = [NSString stringWithFormat:@"我是第%d个任务",i];
-            Model *model = [[Model alloc]initWtihTitle:title url:urls[i]];
+            ZEDownloadModel *model = [[ZEDownloadModel alloc]initWtihTitle:title url:urls[i]];
             [_array addObject:model];
         }
     }

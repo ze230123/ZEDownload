@@ -13,13 +13,13 @@
 #pragma mark- Category
 static const void *downloadModelKey = "downloadModelKey";
 
-@implementation NSURLSessionTask (VideoModel)
+@implementation NSURLSessionTask (DownloadModel)
 
-- (void)setDownloadModel:(Model *)downloadModel {
+- (void)setDownloadModel:(ZEDownloadModel *)downloadModel {
     objc_setAssociatedObject(self, downloadModelKey, downloadModel, OBJC_ASSOCIATION_ASSIGN);
 }
 
-- (Model *)downloadModel {
+- (ZEDownloadModel *)downloadModel {
     return objc_getAssociatedObject(self, downloadModelKey);
 }
 
@@ -37,7 +37,7 @@ static const void *downloadModelKey = "downloadModelKey";
 @implementation ZEDownloadOperation
 
 #pragma mark- life cycle
-- (instancetype)initWith:(Model *)model session:(NSURLSession *)session {
+- (instancetype)initWith:(ZEDownloadModel *)model session:(NSURLSession *)session {
     if (self = [super init]) {
         self.model = model;
         self.session = session;
@@ -62,32 +62,29 @@ static const void *downloadModelKey = "downloadModelKey";
      *  开始任务
      */
     [self.task resume];
-    [self updateState:ZEDownloadStateRuning];
+    [self updateState:ZEOperationRuning];
 }
 
 #pragma mark- Public method
 - (void)suspend {
-        [self.task cancelByProducingResumeData:^(NSData * _Nullable resumeData) {
-            self.model.resumeData = resumeData;
-        }];
-    
-    [self updateState:ZEDownloadStateCancelled];
+    [self updateState:ZEOperationCancelled];
+    [self.task cancelByProducingResumeData:^(NSData * _Nullable resumeData) {
+        self.model.resumeData = resumeData;
+    }];
 }
 
 - (void)downloadFinished {
     
-    [self updateState:ZEDownloadStateComplete];
+    [self updateState:ZEOperationComplete];
 }
 
 #pragma mark- Private method
-- (void)updateState:(ZEDownloadState)state {
+- (void)updateState:(ZEOperationState)state {
     
     [self willChangeValueForKey:@"isExecuting"];
-    [self willChangeValueForKey:@"isCancelled"];
     [self willChangeValueForKey:@"isFinished"];
     _state = state;
     [self didChangeValueForKey:@"isFinished"];
-    [self didChangeValueForKey:@"isCancelled"];
     [self didChangeValueForKey:@"isExecuting"];
     
 }
@@ -105,16 +102,12 @@ static const void *downloadModelKey = "downloadModelKey";
 
 - (BOOL)isExecuting {
     
-    return self.state == ZEDownloadStateRuning;
-}
-
-- (BOOL)isCancelled {
-    
-    return self.state == ZEDownloadStateCancelled;
+    return self.state == ZEOperationRuning;
 }
 
 - (BOOL)isFinished {
-    return self.state == ZEDownloadStateComplete;
+    
+    return self.state == ZEOperationComplete || self.state == ZEOperationCancelled;
 }
 
 @end

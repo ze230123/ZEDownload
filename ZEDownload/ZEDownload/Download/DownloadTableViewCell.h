@@ -7,7 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "Model.h"
+#import "ZEDownloadModel.h"
 
 @interface DownloadTableViewCell : UITableViewCell
 
@@ -18,5 +18,5 @@
 @property (weak, nonatomic) IBOutlet UILabel *speedLabel;
 @property (weak, nonatomic) IBOutlet UIButton *button;
 
-@property (nonatomic, strong) Model *model;
+@property (nonatomic, strong) ZEDownloadModel *model;
 @end

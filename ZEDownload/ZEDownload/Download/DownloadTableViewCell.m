@@ -22,7 +22,7 @@
 }
 
 
-- (void)setModel:(Model *)model {
+- (void)setModel:(ZEDownloadModel *)model {
     _model = model;
     
     self.titleLabel.text = model.title;
@@ -32,7 +32,6 @@
         self.sizeLabel.text = [NSString stringWithFormat:@"%@/%@",model.currentSize,model.totalSize];
     }
     self.speedLabel.text = [NSString stringWithFormat:@"%@",model.speedString];
-    NSLog(@"state %ld",model.state);
-    self.speedLabel.textColor = model.state == ZEStateFailed ? [UIColor redColor] : [UIColor blackColor];
+    self.speedLabel.textColor = model.state == ZEDownloadStateFailed ? [UIColor redColor] : [UIColor blackColor];
 }
 @end

@@ -1,30 +1,32 @@
 //
-//  Model.h
+//  ZEDownloadModel.h
 //  ZEDownload
 //
-//  Created by 泽i on 2016/10/6.
-//  Copyright © 2016年 泽i. All rights reserved.
+//  Created by 泽i on 2017/5/14.
+//  Copyright © 2017年 泽i. All rights reserved.
 //
 
 #import <Foundation/Foundation.h>
 
-@class Model;
+@class ZEDownloadModel;
 
-typedef NS_ENUM(NSInteger, ZEState) {
-    ZEStateNone = 0,       // 初始状态
-    ZEStateRunning = 1,    // 下载中
-    ZEStateSuspended = 2,  // 下载暂停
-    ZEStateCompleted = 3,  // 下载完成
-    ZEStateFailed  = 4,    // 下载失败
-    ZEStateWaiting = 5    // 等待下载
+typedef NS_ENUM(NSInteger, ZEDownloadState) {
+    ZEDownloadStateNone = 0,       // 初始状态
+    ZEDownloadStateRunning = 1,    // 下载中
+    ZEDownloadStateSuspended = 2,  // 下载暂停
+    ZEDownloadStateCompleted = 3,  // 下载完成
+    ZEDownloadStateFailed  = 4,    // 下载失败
+    ZEDownloadStateWaiting = 5    // 等待下载
 };
 
 
-typedef void(^ZEProgressChanged)(Model *model);
-typedef void(^ZEStateChanged)(Model *model);
+typedef void(^ZEProgressChanged)(ZEDownloadModel *model);
+typedef void(^ZEStateChanged)(ZEDownloadModel *model);
 
 
-@interface Model : NSObject 
+
+@interface ZEDownloadModel : NSObject
+
 /** 标题 */
 @property (nonatomic, copy) NSString *title;
 /** 下载链接 */
@@ -42,7 +44,7 @@ typedef void(^ZEStateChanged)(Model *model);
 /** 下载进度 0.0 ~ 1.0 */
 @property (nonatomic, assign) double progress;
 /** 下载状态 */
-@property (nonatomic, assign) ZEState state;
+@property (nonatomic, assign) ZEDownloadState state;
 /** 1s 前下载大小  */
 @property (nonatomic, assign) int64_t bytesWritten;
 /** 下载进度数据 */

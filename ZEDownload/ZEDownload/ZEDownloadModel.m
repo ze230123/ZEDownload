@@ -1,14 +1,14 @@
 //
-//  Model.m
+//  ZEDownloadModel.m
 //  ZEDownload
 //
-//  Created by 泽i on 2016/10/6.
-//  Copyright © 2016年 泽i. All rights reserved.
+//  Created by 泽i on 2017/5/14.
+//  Copyright © 2017年 泽i. All rights reserved.
 //
 
-#import "Model.h"
+#import "ZEDownloadModel.h"
 
-@implementation Model
+@implementation ZEDownloadModel
 
 - (instancetype)initWtihTitle:(NSString *)title url:(NSString *)url {
     if (self = [super init]) {
@@ -27,37 +27,37 @@
     }
 }
 
-- (void)setState:(ZEState)state {
+- (void)setState:(ZEDownloadState)state {
     _state = state;
     switch (state) {
-        case ZEStateNone: {
+        case ZEDownloadStateNone: {
             self.stateString = @"开始下载";
             break;
         }
-        case ZEStateRunning: {
+        case ZEDownloadStateRunning: {
             self.stateString = @"暂停";
             break;
         }
             
-        case ZEStateCompleted: {
+        case ZEDownloadStateCompleted: {
             self.stateString = @"完成";
             self.speedString = @"";
             break;
         }
             
-        case ZEStateWaiting: {
+        case ZEDownloadStateWaiting: {
             self.stateString = @"等待";
             self.speedString = @"";
             break;
         }
             
-        case ZEStateSuspended: {
+        case ZEDownloadStateSuspended: {
             self.stateString = @"继续";
             self.speedString = @"";
             break;
         }
             
-        case ZEStateFailed: {
+        case ZEDownloadStateFailed: {
             self.stateString = @"重新开始";
             self.speedString = @"下载失败";
             break;
@@ -69,4 +69,6 @@
         });
     }
 }
+
+
 @end

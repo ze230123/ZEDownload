@@ -22,7 +22,7 @@
 }
 
 
-- (void)setModel:(Model *)model {
+- (void)setModel:(ZEDownloadModel *)model {
     _model = model;
     self.titleLabel.text = model.title;
 }

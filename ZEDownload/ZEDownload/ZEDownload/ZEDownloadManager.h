@@ -37,25 +37,25 @@
 
  @param model 数据模型
  */
-- (void)addDownLoad:(Model *)model;
+- (void)addDownLoad:(ZEDownloadModel *)model;
 
 /**
  暂停
 
  @param model 数据模型
  */
-- (void)suspend:(Model *)model;
+- (void)suspend:(ZEDownloadModel *)model;
 
 /**
  开始 或 继续
 
  @param model 数据模型
  */
-- (void)resume:(Model *)model;
+- (void)resume:(ZEDownloadModel *)model;
 
 /**
  是否在下载队列中
  */
-- (BOOL)isExecuted:(Model *)model;
+- (BOOL)isExecuted:(ZEDownloadModel *)model;
 
 @end

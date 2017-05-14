@@ -40,30 +40,30 @@
 }
 
 #pragma mark- Public method
-- (void)addDownLoad:(Model *)model {
+- (void)addDownLoad:(ZEDownloadModel *)model {
     [_downloadArr addObject:model];
     ZEDownloadOperation *operation = [[ZEDownloadOperation alloc]initWith:model session:self.session];
     [self addDownArrOrWaitingArr:operation];
 }
 
-- (void)suspend:(Model *)model{
+- (void)suspend:(ZEDownloadModel *)model{
     ZEDownloadOperation *operation = [self operatonForModel:model];
-    model.state = ZEStateSuspended;
+    model.state = ZEDownloadStateSuspended;
     [operation suspend];
     //下载队列未达到最大下载数 将operation添加到下载队列 并将自己从等待队列中删除
     if (self.downloadQueue.operations.count < self.maxDownloadCount) {
         [self nextDownload];
-    } else if (self.waitingQueue.count) { //下载队列达到最大下载数  将自己从等待队列中删除
+    } else if ([self.waitingQueue containsObject:operation]) { //下载队列达到最大下载数  将自己从等待队列中删除
         [self.waitingQueue removeObject:operation];
     }
 }
 
-- (void)resume:(Model *)model {
+- (void)resume:(ZEDownloadModel *)model {
     ZEDownloadOperation *operation = [self operatonForModel:model];
     [self addDownArrOrWaitingArr:operation];
 }
 
-- (BOOL)isExecuted:(Model *)model {
+- (BOOL)isExecuted:(ZEDownloadModel *)model {
     return [_downloadArr containsObject:model];
 }
 #pragma mark- Private method
@@ -72,7 +72,7 @@
     if (self.downloadQueue.operations.count < self.maxDownloadCount) { //下载队列未满
         [self addOperation:operation];
     } else {                                                    //下载队列已满  添加到等待队列 并排序 使下载任务从上往下 进行下载
-        operation.model.state = ZEStateWaiting;
+        operation.model.state = ZEDownloadStateWaiting;
         [self.waitingQueue addObject:operation];
         [self sortWaitingQueue];
     }
@@ -104,7 +104,7 @@
 //添加任务的下载队列
 - (void)addOperation:(ZEDownloadOperation *)operation {
     [self.downloadQueue addOperation:operation];
-    operation.model.state = ZEStateRunning;
+    operation.model.state = ZEDownloadStateRunning;
 }
 
 /**
@@ -113,7 +113,7 @@
  @param model 数据模型
  @return operation对象  下载队列和等待队列里都没有 创建一个新的对象
  */
-- (ZEDownloadOperation *)operatonForModel:(Model *)model {
+- (ZEDownloadOperation *)operatonForModel:(ZEDownloadModel *)model {
     if ([self findOperationInDownloadQueue:model]) {
         
         return [self findOperationInDownloadQueue:model];
@@ -125,7 +125,7 @@
     return [[ZEDownloadOperation alloc] initWith:model session:self.session];
 }
 // 在下载队列中查找
-- (ZEDownloadOperation *)findOperationInDownloadQueue:(Model *)model {
+- (ZEDownloadOperation *)findOperationInDownloadQueue:(ZEDownloadModel *)model {
     for (ZEDownloadOperation *operation in self.downloadQueue.operations) {
         if (operation.model == model) {
             return operation;
@@ -134,7 +134,7 @@
     return nil;
 }
 // 在等待队列中查找
-- (ZEDownloadOperation *)findOperationInWaiting:(Model *)model {
+- (ZEDownloadOperation *)findOperationInWaiting:(ZEDownloadModel *)model {
     for (ZEDownloadOperation *operation in self.waitingQueue) {
         if (operation.model == model) {
             return operation;
@@ -178,7 +178,7 @@
     [[NSFileManager defaultManager] moveItemAtURL:location toURL:filename error:nil];
     NSLog(@"fileUrl : %@",filename.absoluteString);
     downloadTask.downloadModel.localPath = filename.absoluteString;
-    downloadTask.downloadModel.state = ZEStateCompleted;
+    downloadTask.downloadModel.state = ZEDownloadStateCompleted;
     ZEDownloadOperation *operation = [self findOperationInDownloadQueue:downloadTask.downloadModel];
     [self moveToCompleteArr:operation];
     [self nextDownload];
@@ -187,8 +187,9 @@
 - (void)URLSession:(NSURLSession *)session task:(NSURLSessionTask *)task didCompleteWithError:(nullable NSError *)error {
     // code < 0 是发生错误  -999 是task 被取消了  暂且如下处理
     if (error.code < 0 && error.code != -999) {
+        NSLog(@"发生错误");
         task.downloadModel.resumeData = error.userInfo[NSURLSessionDownloadTaskResumeData];
-        task.downloadModel.state = ZEStateFailed;
+        task.downloadModel.state = ZEDownloadStateFailed;
         ZEDownloadOperation *operation = [self findOperationInDownloadQueue:task.downloadModel];
         [operation downloadFinished];
     }
