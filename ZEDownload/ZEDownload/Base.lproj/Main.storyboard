@@ -1,0 +1,219 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11542" systemVersion="16E195" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="bI3-de-xK2">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Aspect ratio constraints" minToolsVersion="5.1"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Tab Bar Controller-->
+        <scene sceneID="pKz-QS-3bo">
+            <objects>
+                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="bI3-de-xK2" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <tabBar key="tabBar" contentMode="scaleToFill" id="548-Gg-VVc">
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="9RZ-G0-9zb" kind="relationship" relationship="viewControllers" id="lqh-EY-8yG"/>
+                        <segue destination="npE-PM-bp9" kind="relationship" relationship="viewControllers" id="jms-Fd-ZKw"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m4c-8J-mTQ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="36" y="449"/>
+        </scene>
+        <!--首页-->
+        <scene sceneID="No1-Ak-1By">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="9RZ-G0-9zb" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="首页" id="3uM-6n-8bb"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="mlS-z4-fc0">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="l1s-ln-MNQ" kind="relationship" relationship="rootViewController" id="7GV-Eh-Ial"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TFl-cq-MPU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="137.18140929535232"/>
+        </scene>
+        <!--下载资源-->
+        <scene sceneID="IM7-wm-Oqt">
+            <objects>
+                <tableViewController id="l1s-ln-MNQ" customClass="HomeTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="75" sectionHeaderHeight="28" sectionFooterHeight="28" id="DFO-1g-OKX">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="HOMECELL" rowHeight="75" id="SRu-KW-wz4" customClass="HomeTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="SRu-KW-wz4" id="tMb-UF-DQ7">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aqn-ZA-ZNT">
+                                            <rect key="frame" x="8" y="24" width="54" height="26.5"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="22"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IN6-Fg-5KE">
+                                            <rect key="frame" x="301" y="22" width="58" height="30"/>
+                                            <color key="backgroundColor" red="1" green="0.95285758369999995" blue="0.023822532800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="IN6-Fg-5KE" secondAttribute="height" multiplier="29:15" id="ZNS-SE-xHU"/>
+                                            </constraints>
+                                            <state key="normal" title="下载"/>
+                                        </button>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstItem="aqn-ZA-ZNT" firstAttribute="centerY" secondItem="tMb-UF-DQ7" secondAttribute="centerY" id="0OM-OL-9Wm"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="aqn-ZA-ZNT" secondAttribute="leading" id="7yl-cO-GNq"/>
+                                        <constraint firstItem="IN6-Fg-5KE" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="aqn-ZA-ZNT" secondAttribute="trailing" constant="34" id="Qur-CK-8Zg"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="IN6-Fg-5KE" secondAttribute="trailing" constant="8" id="mMT-qL-2W1"/>
+                                        <constraint firstItem="IN6-Fg-5KE" firstAttribute="centerY" secondItem="aqn-ZA-ZNT" secondAttribute="centerY" id="xCb-sR-Gec"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="button" destination="IN6-Fg-5KE" id="ghu-o7-jNa"/>
+                                    <outlet property="titleLabel" destination="aqn-ZA-ZNT" id="cZR-dH-v5a"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="l1s-ln-MNQ" id="znQ-0w-yUd"/>
+                            <outlet property="delegate" destination="l1s-ln-MNQ" id="Dux-57-ITy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="下载资源" id="zyZ-zr-Lv5"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DMd-th-4TH" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="136.28185907046478"/>
+        </scene>
+        <!--下载-->
+        <scene sceneID="9fq-4m-MXf">
+            <objects>
+                <tableViewController id="lPh-IW-IKH" customClass="DownloadTableViewController" sceneMemberID="viewController">
+                    <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="90" sectionHeaderHeight="28" sectionFooterHeight="28" id="Fri-V6-RmO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="DOWNLOADCELL" rowHeight="75" id="noo-OT-G6a" customClass="DownloadTableViewCell">
+                                <rect key="frame" x="0.0" y="28" width="375" height="75"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="noo-OT-G6a" id="cAx-jo-lo3">
+                                    <rect key="frame" x="0.0" y="0.0" width="375" height="74"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOL-pd-Bmz">
+                                            <rect key="frame" x="312.5" y="21" width="54.5" height="32"/>
+                                            <color key="backgroundColor" red="1" green="0.95285758369999995" blue="0.023822532800000001" alpha="1" colorSpace="calibratedRGB"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="kOL-pd-Bmz" secondAttribute="height" multiplier="29:17" id="bIN-OO-IsD"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <state key="normal" title="暂停">
+                                                <color key="titleColor" red="0.0" green="0.0" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                            </state>
+                                        </button>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k9Y-V2-JGA">
+                                            <rect key="frame" x="8" y="8" width="42" height="25"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="25" id="0eE-yU-AjQ"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <progressView opaque="NO" contentMode="scaleToFill" verticalHuggingPriority="750" progress="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="zJP-pY-nsa">
+                                            <rect key="frame" x="8" y="40" width="295.5" height="2"/>
+                                        </progressView>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IJs-Hg-orj">
+                                            <rect key="frame" x="8" y="49" width="42" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="m6V-dE-s9n"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="rzn-wI-baB">
+                                            <rect key="frame" x="270.5" y="49" width="33" height="15"/>
+                                            <constraints>
+                                                <constraint firstAttribute="height" constant="15" id="LA4-RU-u4R"/>
+                                            </constraints>
+                                            <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                    <constraints>
+                                        <constraint firstAttribute="leadingMargin" secondItem="IJs-Hg-orj" secondAttribute="leading" id="1aE-OW-bJ2"/>
+                                        <constraint firstItem="rzn-wI-baB" firstAttribute="top" secondItem="IJs-Hg-orj" secondAttribute="top" id="1lo-2t-xSR"/>
+                                        <constraint firstItem="kOL-pd-Bmz" firstAttribute="leading" secondItem="zJP-pY-nsa" secondAttribute="trailing" constant="8.5" id="9x9-xT-MrF"/>
+                                        <constraint firstItem="rzn-wI-baB" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="IJs-Hg-orj" secondAttribute="trailing" constant="5" id="AxG-DE-oKd"/>
+                                        <constraint firstItem="rzn-wI-baB" firstAttribute="trailing" secondItem="zJP-pY-nsa" secondAttribute="trailing" id="LZY-pL-brU"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="zJP-pY-nsa" secondAttribute="leading" id="P1d-sU-NVa"/>
+                                        <constraint firstItem="kOL-pd-Bmz" firstAttribute="centerY" secondItem="cAx-jo-lo3" secondAttribute="centerY" id="cpa-4g-U8Z"/>
+                                        <constraint firstAttribute="leadingMargin" secondItem="k9Y-V2-JGA" secondAttribute="leading" id="i3c-gz-Fcv"/>
+                                        <constraint firstItem="kOL-pd-Bmz" firstAttribute="leading" relation="greaterThanOrEqual" secondItem="k9Y-V2-JGA" secondAttribute="trailing" constant="5" id="iDM-Qs-xWr"/>
+                                        <constraint firstAttribute="trailingMargin" secondItem="kOL-pd-Bmz" secondAttribute="trailing" constant="0.5" id="li3-xE-78T"/>
+                                        <constraint firstAttribute="topMargin" secondItem="k9Y-V2-JGA" secondAttribute="top" id="m7R-ju-7gS"/>
+                                        <constraint firstItem="zJP-pY-nsa" firstAttribute="top" secondItem="k9Y-V2-JGA" secondAttribute="bottom" constant="7" id="tpw-xh-Jvx"/>
+                                        <constraint firstItem="IJs-Hg-orj" firstAttribute="top" secondItem="zJP-pY-nsa" secondAttribute="bottom" constant="7" id="zeJ-cR-FeV"/>
+                                    </constraints>
+                                </tableViewCellContentView>
+                                <connections>
+                                    <outlet property="button" destination="kOL-pd-Bmz" id="rps-KL-LBA"/>
+                                    <outlet property="progressView" destination="zJP-pY-nsa" id="4Gp-yj-wvp"/>
+                                    <outlet property="sizeLabel" destination="IJs-Hg-orj" id="JQK-fG-ysQ"/>
+                                    <outlet property="speedLabel" destination="rzn-wI-baB" id="O8h-g2-1FI"/>
+                                    <outlet property="titleLabel" destination="k9Y-V2-JGA" id="F7N-3e-MNe"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="lPh-IW-IKH" id="icQ-Mn-ANc"/>
+                            <outlet property="delegate" destination="lPh-IW-IKH" id="3gd-sL-Yt2"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="下载" id="SB6-SS-jSO"/>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="xvO-yA-zJy" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1852" y="790.25487256371821"/>
+        </scene>
+        <!--下载-->
+        <scene sceneID="cSe-9L-3yO">
+            <objects>
+                <navigationController id="npE-PM-bp9" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="下载" id="Jwh-ax-uWH"/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="Kwx-l2-7UC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="lPh-IW-IKH" kind="relationship" relationship="rootViewController" id="p9I-ul-KlV"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bch-vw-be3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1076" y="792"/>
+        </scene>
+    </scenes>
+</document>

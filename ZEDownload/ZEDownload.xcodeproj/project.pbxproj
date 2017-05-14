@@ -1,0 +1,590 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9948ACCC1EC71B6E00516DE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948ACCB1EC71B6E00516DE5 /* main.m */; };
+		9948ACCF1EC71B6E00516DE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948ACCE1EC71B6E00516DE5 /* AppDelegate.m */; };
+		9948ACD51EC71B6E00516DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9948ACD31EC71B6E00516DE5 /* Main.storyboard */; };
+		9948ACD71EC71B6E00516DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9948ACD61EC71B6E00516DE5 /* Assets.xcassets */; };
+		9948ACDA1EC71B6E00516DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9948ACD81EC71B6E00516DE5 /* LaunchScreen.storyboard */; };
+		9948ACE51EC71B6E00516DE5 /* ZEDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948ACE41EC71B6E00516DE5 /* ZEDownloadTests.m */; };
+		9948ACF01EC71B6E00516DE5 /* ZEDownloadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948ACEF1EC71B6E00516DE5 /* ZEDownloadUITests.m */; };
+		9948AD021EC71E8300516DE5 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD011EC71E8300516DE5 /* HomeTableViewController.m */; };
+		9948AD051EC71E9900516DE5 /* DownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD041EC71E9900516DE5 /* DownloadTableViewController.m */; };
+		9948AD081EC7239A00516DE5 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD071EC7239A00516DE5 /* HomeTableViewCell.m */; };
+		9948AD0B1EC723A600516DE5 /* DownloadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD0A1EC723A600516DE5 /* DownloadTableViewCell.m */; };
+		9948AD0E1EC72E5600516DE5 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD0D1EC72E5600516DE5 /* Model.m */; };
+		9948AD131EC72FEE00516DE5 /* ZEDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD101EC72FEE00516DE5 /* ZEDownloadManager.m */; };
+		9948AD141EC72FEE00516DE5 /* ZEDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD121EC72FEE00516DE5 /* ZEDownloadOperation.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		9948ACE11EC71B6E00516DE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9948ACBF1EC71B6E00516DE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9948ACC61EC71B6E00516DE5;
+			remoteInfo = ZEDownload;
+		};
+		9948ACEC1EC71B6E00516DE5 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 9948ACBF1EC71B6E00516DE5 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 9948ACC61EC71B6E00516DE5;
+			remoteInfo = ZEDownload;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		9948ACC71EC71B6E00516DE5 /* ZEDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZEDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		9948ACCB1EC71B6E00516DE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9948ACCD1EC71B6E00516DE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9948ACCE1EC71B6E00516DE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9948ACD41EC71B6E00516DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9948ACD61EC71B6E00516DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9948ACD91EC71B6E00516DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9948ACDB1EC71B6E00516DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9948ACE01EC71B6E00516DE5 /* ZEDownloadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZEDownloadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9948ACE41EC71B6E00516DE5 /* ZEDownloadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadTests.m; sourceTree = "<group>"; };
+		9948ACE61EC71B6E00516DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9948ACEB1EC71B6E00516DE5 /* ZEDownloadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZEDownloadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		9948ACEF1EC71B6E00516DE5 /* ZEDownloadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadUITests.m; sourceTree = "<group>"; };
+		9948ACF11EC71B6E00516DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9948AD001EC71E8300516DE5 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		9948AD011EC71E8300516DE5 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		9948AD031EC71E9900516DE5 /* DownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewController.h; sourceTree = "<group>"; };
+		9948AD041EC71E9900516DE5 /* DownloadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewController.m; sourceTree = "<group>"; };
+		9948AD061EC7239A00516DE5 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		9948AD071EC7239A00516DE5 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		9948AD091EC723A600516DE5 /* DownloadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewCell.h; sourceTree = "<group>"; };
+		9948AD0A1EC723A600516DE5 /* DownloadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewCell.m; sourceTree = "<group>"; };
+		9948AD0C1EC72E5600516DE5 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = ../Model.h; sourceTree = "<group>"; };
+		9948AD0D1EC72E5600516DE5 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = ../Model.m; sourceTree = "<group>"; };
+		9948AD0F1EC72FEE00516DE5 /* ZEDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEDownloadManager.h; sourceTree = "<group>"; };
+		9948AD101EC72FEE00516DE5 /* ZEDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadManager.m; sourceTree = "<group>"; };
+		9948AD111EC72FEE00516DE5 /* ZEDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEDownloadOperation.h; sourceTree = "<group>"; };
+		9948AD121EC72FEE00516DE5 /* ZEDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadOperation.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		9948ACC41EC71B6E00516DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9948ACDD1EC71B6E00516DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9948ACE81EC71B6E00516DE5 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		9948ACBE1EC71B6E00516DE5 = {
+			isa = PBXGroup;
+			children = (
+				9948ACC91EC71B6E00516DE5 /* ZEDownload */,
+				9948ACE31EC71B6E00516DE5 /* ZEDownloadTests */,
+				9948ACEE1EC71B6E00516DE5 /* ZEDownloadUITests */,
+				9948ACC81EC71B6E00516DE5 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9948ACC81EC71B6E00516DE5 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				9948ACC71EC71B6E00516DE5 /* ZEDownload.app */,
+				9948ACE01EC71B6E00516DE5 /* ZEDownloadTests.xctest */,
+				9948ACEB1EC71B6E00516DE5 /* ZEDownloadUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		9948ACC91EC71B6E00516DE5 /* ZEDownload */ = {
+			isa = PBXGroup;
+			children = (
+				9948ACFE1EC71BB200516DE5 /* ZEDownload */,
+				9948ACFD1EC71BA100516DE5 /* Download */,
+				9948ACFF1EC71E0F00516DE5 /* Home */,
+				9948ACCD1EC71B6E00516DE5 /* AppDelegate.h */,
+				9948ACCE1EC71B6E00516DE5 /* AppDelegate.m */,
+				9948ACD31EC71B6E00516DE5 /* Main.storyboard */,
+				9948ACD61EC71B6E00516DE5 /* Assets.xcassets */,
+				9948ACD81EC71B6E00516DE5 /* LaunchScreen.storyboard */,
+				9948ACDB1EC71B6E00516DE5 /* Info.plist */,
+				9948ACCA1EC71B6E00516DE5 /* Supporting Files */,
+			);
+			path = ZEDownload;
+			sourceTree = "<group>";
+		};
+		9948ACCA1EC71B6E00516DE5 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				9948ACCB1EC71B6E00516DE5 /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		9948ACE31EC71B6E00516DE5 /* ZEDownloadTests */ = {
+			isa = PBXGroup;
+			children = (
+				9948ACE41EC71B6E00516DE5 /* ZEDownloadTests.m */,
+				9948ACE61EC71B6E00516DE5 /* Info.plist */,
+			);
+			path = ZEDownloadTests;
+			sourceTree = "<group>";
+		};
+		9948ACEE1EC71B6E00516DE5 /* ZEDownloadUITests */ = {
+			isa = PBXGroup;
+			children = (
+				9948ACEF1EC71B6E00516DE5 /* ZEDownloadUITests.m */,
+				9948ACF11EC71B6E00516DE5 /* Info.plist */,
+			);
+			path = ZEDownloadUITests;
+			sourceTree = "<group>";
+		};
+		9948ACFD1EC71BA100516DE5 /* Download */ = {
+			isa = PBXGroup;
+			children = (
+				9948AD031EC71E9900516DE5 /* DownloadTableViewController.h */,
+				9948AD041EC71E9900516DE5 /* DownloadTableViewController.m */,
+				9948AD091EC723A600516DE5 /* DownloadTableViewCell.h */,
+				9948AD0A1EC723A600516DE5 /* DownloadTableViewCell.m */,
+			);
+			name = Download;
+			sourceTree = "<group>";
+		};
+		9948ACFE1EC71BB200516DE5 /* ZEDownload */ = {
+			isa = PBXGroup;
+			children = (
+				9948AD0F1EC72FEE00516DE5 /* ZEDownloadManager.h */,
+				9948AD101EC72FEE00516DE5 /* ZEDownloadManager.m */,
+				9948AD111EC72FEE00516DE5 /* ZEDownloadOperation.h */,
+				9948AD121EC72FEE00516DE5 /* ZEDownloadOperation.m */,
+			);
+			path = ZEDownload;
+			sourceTree = "<group>";
+		};
+		9948ACFF1EC71E0F00516DE5 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9948AD001EC71E8300516DE5 /* HomeTableViewController.h */,
+				9948AD011EC71E8300516DE5 /* HomeTableViewController.m */,
+				9948AD061EC7239A00516DE5 /* HomeTableViewCell.h */,
+				9948AD071EC7239A00516DE5 /* HomeTableViewCell.m */,
+				9948AD0C1EC72E5600516DE5 /* Model.h */,
+				9948AD0D1EC72E5600516DE5 /* Model.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		9948ACC61EC71B6E00516DE5 /* ZEDownload */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9948ACF41EC71B6E00516DE5 /* Build configuration list for PBXNativeTarget "ZEDownload" */;
+			buildPhases = (
+				9948ACC31EC71B6E00516DE5 /* Sources */,
+				9948ACC41EC71B6E00516DE5 /* Frameworks */,
+				9948ACC51EC71B6E00516DE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ZEDownload;
+			productName = ZEDownload;
+			productReference = 9948ACC71EC71B6E00516DE5 /* ZEDownload.app */;
+			productType = "com.apple.product-type.application";
+		};
+		9948ACDF1EC71B6E00516DE5 /* ZEDownloadTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9948ACF71EC71B6E00516DE5 /* Build configuration list for PBXNativeTarget "ZEDownloadTests" */;
+			buildPhases = (
+				9948ACDC1EC71B6E00516DE5 /* Sources */,
+				9948ACDD1EC71B6E00516DE5 /* Frameworks */,
+				9948ACDE1EC71B6E00516DE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9948ACE21EC71B6E00516DE5 /* PBXTargetDependency */,
+			);
+			name = ZEDownloadTests;
+			productName = ZEDownloadTests;
+			productReference = 9948ACE01EC71B6E00516DE5 /* ZEDownloadTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		9948ACEA1EC71B6E00516DE5 /* ZEDownloadUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 9948ACFA1EC71B6E00516DE5 /* Build configuration list for PBXNativeTarget "ZEDownloadUITests" */;
+			buildPhases = (
+				9948ACE71EC71B6E00516DE5 /* Sources */,
+				9948ACE81EC71B6E00516DE5 /* Frameworks */,
+				9948ACE91EC71B6E00516DE5 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				9948ACED1EC71B6E00516DE5 /* PBXTargetDependency */,
+			);
+			name = ZEDownloadUITests;
+			productName = ZEDownloadUITests;
+			productReference = 9948ACEB1EC71B6E00516DE5 /* ZEDownloadUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		9948ACBF1EC71B6E00516DE5 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0810;
+				ORGANIZATIONNAME = "泽i";
+				TargetAttributes = {
+					9948ACC61EC71B6E00516DE5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+					};
+					9948ACDF1EC71B6E00516DE5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9948ACC61EC71B6E00516DE5;
+					};
+					9948ACEA1EC71B6E00516DE5 = {
+						CreatedOnToolsVersion = 8.1;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 9948ACC61EC71B6E00516DE5;
+					};
+				};
+			};
+			buildConfigurationList = 9948ACC21EC71B6E00516DE5 /* Build configuration list for PBXProject "ZEDownload" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 9948ACBE1EC71B6E00516DE5;
+			productRefGroup = 9948ACC81EC71B6E00516DE5 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				9948ACC61EC71B6E00516DE5 /* ZEDownload */,
+				9948ACDF1EC71B6E00516DE5 /* ZEDownloadTests */,
+				9948ACEA1EC71B6E00516DE5 /* ZEDownloadUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		9948ACC51EC71B6E00516DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9948ACDA1EC71B6E00516DE5 /* LaunchScreen.storyboard in Resources */,
+				9948ACD71EC71B6E00516DE5 /* Assets.xcassets in Resources */,
+				9948ACD51EC71B6E00516DE5 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9948ACDE1EC71B6E00516DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9948ACE91EC71B6E00516DE5 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		9948ACC31EC71B6E00516DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9948AD141EC72FEE00516DE5 /* ZEDownloadOperation.m in Sources */,
+				9948AD131EC72FEE00516DE5 /* ZEDownloadManager.m in Sources */,
+				9948ACCF1EC71B6E00516DE5 /* AppDelegate.m in Sources */,
+				9948AD021EC71E8300516DE5 /* HomeTableViewController.m in Sources */,
+				9948AD081EC7239A00516DE5 /* HomeTableViewCell.m in Sources */,
+				9948ACCC1EC71B6E00516DE5 /* main.m in Sources */,
+				9948AD0E1EC72E5600516DE5 /* Model.m in Sources */,
+				9948AD051EC71E9900516DE5 /* DownloadTableViewController.m in Sources */,
+				9948AD0B1EC723A600516DE5 /* DownloadTableViewCell.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9948ACDC1EC71B6E00516DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9948ACE51EC71B6E00516DE5 /* ZEDownloadTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9948ACE71EC71B6E00516DE5 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9948ACF01EC71B6E00516DE5 /* ZEDownloadUITests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		9948ACE21EC71B6E00516DE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9948ACC61EC71B6E00516DE5 /* ZEDownload */;
+			targetProxy = 9948ACE11EC71B6E00516DE5 /* PBXContainerItemProxy */;
+		};
+		9948ACED1EC71B6E00516DE5 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 9948ACC61EC71B6E00516DE5 /* ZEDownload */;
+			targetProxy = 9948ACEC1EC71B6E00516DE5 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		9948ACD31EC71B6E00516DE5 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9948ACD41EC71B6E00516DE5 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		9948ACD81EC71B6E00516DE5 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9948ACD91EC71B6E00516DE5 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		9948ACF21EC71B6E00516DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		9948ACF31EC71B6E00516DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		9948ACF51EC71B6E00516DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZEDownload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ze230123.ZEDownload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		9948ACF61EC71B6E00516DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ZEDownload/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ze230123.ZEDownload;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		9948ACF81EC71B6E00516DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZEDownloadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ze230123.ZEDownloadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZEDownload.app/ZEDownload";
+			};
+			name = Debug;
+		};
+		9948ACF91EC71B6E00516DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = ZEDownloadTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ze230123.ZEDownloadTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ZEDownload.app/ZEDownload";
+			};
+			name = Release;
+		};
+		9948ACFB1EC71B6E00516DE5 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZEDownloadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ze230123.ZEDownloadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZEDownload;
+			};
+			name = Debug;
+		};
+		9948ACFC1EC71B6E00516DE5 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				INFOPLIST_FILE = ZEDownloadUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.ze230123.ZEDownloadUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_TARGET_NAME = ZEDownload;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		9948ACC21EC71B6E00516DE5 /* Build configuration list for PBXProject "ZEDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9948ACF21EC71B6E00516DE5 /* Debug */,
+				9948ACF31EC71B6E00516DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		9948ACF41EC71B6E00516DE5 /* Build configuration list for PBXNativeTarget "ZEDownload" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9948ACF51EC71B6E00516DE5 /* Debug */,
+				9948ACF61EC71B6E00516DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9948ACF71EC71B6E00516DE5 /* Build configuration list for PBXNativeTarget "ZEDownloadTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9948ACF81EC71B6E00516DE5 /* Debug */,
+				9948ACF91EC71B6E00516DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		9948ACFA1EC71B6E00516DE5 /* Build configuration list for PBXNativeTarget "ZEDownloadUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				9948ACFB1EC71B6E00516DE5 /* Debug */,
+				9948ACFC1EC71B6E00516DE5 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 9948ACBF1EC71B6E00516DE5 /* Project object */;
+}
