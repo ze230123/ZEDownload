@@ -15,12 +15,12 @@
 		9948ACE51EC71B6E00516DE5 /* ZEDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948ACE41EC71B6E00516DE5 /* ZEDownloadTests.m */; };
 		9948ACF01EC71B6E00516DE5 /* ZEDownloadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948ACEF1EC71B6E00516DE5 /* ZEDownloadUITests.m */; };
 		9948AD021EC71E8300516DE5 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD011EC71E8300516DE5 /* HomeTableViewController.m */; };
-		9948AD051EC71E9900516DE5 /* DownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD041EC71E9900516DE5 /* DownloadTableViewController.m */; };
 		9948AD081EC7239A00516DE5 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD071EC7239A00516DE5 /* HomeTableViewCell.m */; };
-		9948AD0B1EC723A600516DE5 /* DownloadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD0A1EC723A600516DE5 /* DownloadTableViewCell.m */; };
 		9948AD0E1EC72E5600516DE5 /* Model.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD0D1EC72E5600516DE5 /* Model.m */; };
 		9948AD131EC72FEE00516DE5 /* ZEDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD101EC72FEE00516DE5 /* ZEDownloadManager.m */; };
 		9948AD141EC72FEE00516DE5 /* ZEDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD121EC72FEE00516DE5 /* ZEDownloadOperation.m */; };
+		9948AD1C1EC85D4300516DE5 /* DownloadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD191EC85D4300516DE5 /* DownloadTableViewCell.m */; };
+		9948AD1D1EC85D4300516DE5 /* DownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD1B1EC85D4300516DE5 /* DownloadTableViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,18 +57,18 @@
 		9948ACF11EC71B6E00516DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9948AD001EC71E8300516DE5 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
 		9948AD011EC71E8300516DE5 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
-		9948AD031EC71E9900516DE5 /* DownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewController.h; sourceTree = "<group>"; };
-		9948AD041EC71E9900516DE5 /* DownloadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewController.m; sourceTree = "<group>"; };
 		9948AD061EC7239A00516DE5 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
 		9948AD071EC7239A00516DE5 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
-		9948AD091EC723A600516DE5 /* DownloadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewCell.h; sourceTree = "<group>"; };
-		9948AD0A1EC723A600516DE5 /* DownloadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewCell.m; sourceTree = "<group>"; };
 		9948AD0C1EC72E5600516DE5 /* Model.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Model.h; path = ../Model.h; sourceTree = "<group>"; };
 		9948AD0D1EC72E5600516DE5 /* Model.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Model.m; path = ../Model.m; sourceTree = "<group>"; };
 		9948AD0F1EC72FEE00516DE5 /* ZEDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEDownloadManager.h; sourceTree = "<group>"; };
 		9948AD101EC72FEE00516DE5 /* ZEDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadManager.m; sourceTree = "<group>"; };
 		9948AD111EC72FEE00516DE5 /* ZEDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEDownloadOperation.h; sourceTree = "<group>"; };
 		9948AD121EC72FEE00516DE5 /* ZEDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadOperation.m; sourceTree = "<group>"; };
+		9948AD181EC85D4300516DE5 /* DownloadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewCell.h; sourceTree = "<group>"; };
+		9948AD191EC85D4300516DE5 /* DownloadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewCell.m; sourceTree = "<group>"; };
+		9948AD1A1EC85D4300516DE5 /* DownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewController.h; sourceTree = "<group>"; };
+		9948AD1B1EC85D4300516DE5 /* DownloadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,12 +162,12 @@
 		9948ACFD1EC71BA100516DE5 /* Download */ = {
 			isa = PBXGroup;
 			children = (
-				9948AD031EC71E9900516DE5 /* DownloadTableViewController.h */,
-				9948AD041EC71E9900516DE5 /* DownloadTableViewController.m */,
-				9948AD091EC723A600516DE5 /* DownloadTableViewCell.h */,
-				9948AD0A1EC723A600516DE5 /* DownloadTableViewCell.m */,
+				9948AD181EC85D4300516DE5 /* DownloadTableViewCell.h */,
+				9948AD191EC85D4300516DE5 /* DownloadTableViewCell.m */,
+				9948AD1A1EC85D4300516DE5 /* DownloadTableViewController.h */,
+				9948AD1B1EC85D4300516DE5 /* DownloadTableViewController.m */,
 			);
-			name = Download;
+			path = Download;
 			sourceTree = "<group>";
 		};
 		9948ACFE1EC71BB200516DE5 /* ZEDownload */ = {
@@ -329,13 +329,13 @@
 			files = (
 				9948AD141EC72FEE00516DE5 /* ZEDownloadOperation.m in Sources */,
 				9948AD131EC72FEE00516DE5 /* ZEDownloadManager.m in Sources */,
+				9948AD1D1EC85D4300516DE5 /* DownloadTableViewController.m in Sources */,
 				9948ACCF1EC71B6E00516DE5 /* AppDelegate.m in Sources */,
 				9948AD021EC71E8300516DE5 /* HomeTableViewController.m in Sources */,
 				9948AD081EC7239A00516DE5 /* HomeTableViewCell.m in Sources */,
+				9948AD1C1EC85D4300516DE5 /* DownloadTableViewCell.m in Sources */,
 				9948ACCC1EC71B6E00516DE5 /* main.m in Sources */,
 				9948AD0E1EC72E5600516DE5 /* Model.m in Sources */,
-				9948AD051EC71E9900516DE5 /* DownloadTableViewController.m in Sources */,
-				9948AD0B1EC723A600516DE5 /* DownloadTableViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
