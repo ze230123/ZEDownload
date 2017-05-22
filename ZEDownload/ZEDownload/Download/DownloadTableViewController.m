@@ -28,6 +28,10 @@
     
     [self.tableView reloadData];
 }
+- (void)dealloc {
+    NSLog(@"dealloc %@",self.description);
+}
+
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
     return ZEDownloader.downloadArr.count;
@@ -50,7 +54,9 @@
     };
     model.stateChanged = ^(ZEDownloadModel *model) {
         [displayCell setModel:model];
-        [tableView reloadData];
+        if (model.state == ZEDownloadStateCompleted) {
+            [tableView reloadData];
+        }
     };
 }
 

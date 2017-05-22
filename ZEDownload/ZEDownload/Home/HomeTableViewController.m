@@ -30,6 +30,10 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (void)dealloc {
+    NSLog(@"dealloc %@",self.description);
+}
+
 #pragma mark - Table view data source
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
 

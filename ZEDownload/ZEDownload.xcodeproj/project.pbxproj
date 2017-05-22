@@ -7,20 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		9948ACCC1EC71B6E00516DE5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948ACCB1EC71B6E00516DE5 /* main.m */; };
-		9948ACCF1EC71B6E00516DE5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948ACCE1EC71B6E00516DE5 /* AppDelegate.m */; };
-		9948ACD51EC71B6E00516DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9948ACD31EC71B6E00516DE5 /* Main.storyboard */; };
-		9948ACD71EC71B6E00516DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9948ACD61EC71B6E00516DE5 /* Assets.xcassets */; };
-		9948ACDA1EC71B6E00516DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9948ACD81EC71B6E00516DE5 /* LaunchScreen.storyboard */; };
 		9948ACE51EC71B6E00516DE5 /* ZEDownloadTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948ACE41EC71B6E00516DE5 /* ZEDownloadTests.m */; };
 		9948ACF01EC71B6E00516DE5 /* ZEDownloadUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948ACEF1EC71B6E00516DE5 /* ZEDownloadUITests.m */; };
-		9948AD021EC71E8300516DE5 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD011EC71E8300516DE5 /* HomeTableViewController.m */; };
-		9948AD081EC7239A00516DE5 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD071EC7239A00516DE5 /* HomeTableViewCell.m */; };
-		9948AD131EC72FEE00516DE5 /* ZEDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD101EC72FEE00516DE5 /* ZEDownloadManager.m */; };
-		9948AD141EC72FEE00516DE5 /* ZEDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD121EC72FEE00516DE5 /* ZEDownloadOperation.m */; };
-		9948AD1C1EC85D4300516DE5 /* DownloadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD191EC85D4300516DE5 /* DownloadTableViewCell.m */; };
-		9948AD1D1EC85D4300516DE5 /* DownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD1B1EC85D4300516DE5 /* DownloadTableViewController.m */; };
-		9948AD201EC86BF300516DE5 /* ZEDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9948AD1F1EC86BF300516DE5 /* ZEDownloadModel.m */; };
+		9950EAD61ED3171A0063DEB5 /* NSURLSession+CorrectResumData.m in Sources */ = {isa = PBXBuildFile; fileRef = 9950EAD51ED3171A0063DEB5 /* NSURLSession+CorrectResumData.m */; };
+		9989E2BA1ED1F46E00788D15 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989E2A11ED1F46E00788D15 /* AppDelegate.m */; };
+		9989E2BB1ED1F46E00788D15 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 9989E2A21ED1F46E00788D15 /* Assets.xcassets */; };
+		9989E2BC1ED1F46E00788D15 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9989E2A31ED1F46E00788D15 /* LaunchScreen.storyboard */; };
+		9989E2BD1ED1F46E00788D15 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 9989E2A51ED1F46E00788D15 /* Main.storyboard */; };
+		9989E2BE1ED1F46E00788D15 /* DownloadTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989E2A91ED1F46E00788D15 /* DownloadTableViewCell.m */; };
+		9989E2BF1ED1F46E00788D15 /* DownloadTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989E2AB1ED1F46E00788D15 /* DownloadTableViewController.m */; };
+		9989E2C01ED1F46E00788D15 /* HomeTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989E2AE1ED1F46E00788D15 /* HomeTableViewCell.m */; };
+		9989E2C11ED1F46E00788D15 /* HomeTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989E2B01ED1F46E00788D15 /* HomeTableViewController.m */; };
+		9989E2C21ED1F46E00788D15 /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 9989E2B11ED1F46E00788D15 /* Info.plist */; };
+		9989E2C31ED1F46E00788D15 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989E2B21ED1F46E00788D15 /* main.m */; };
+		9989E2C41ED1F46E00788D15 /* ZEDownloadManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989E2B51ED1F46E00788D15 /* ZEDownloadManager.m */; };
+		9989E2C51ED1F46E00788D15 /* ZEDownloadOperation.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989E2B71ED1F46E00788D15 /* ZEDownloadOperation.m */; };
+		9989E2C61ED1F46E00788D15 /* ZEDownloadModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989E2B91ED1F46E00788D15 /* ZEDownloadModel.m */; };
+		9989E2CA1ED1F59300788D15 /* ZEFileUtils.m in Sources */ = {isa = PBXBuildFile; fileRef = 9989E2C91ED1F59300788D15 /* ZEFileUtils.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,33 +45,37 @@
 
 /* Begin PBXFileReference section */
 		9948ACC71EC71B6E00516DE5 /* ZEDownload.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZEDownload.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		9948ACCB1EC71B6E00516DE5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		9948ACCD1EC71B6E00516DE5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		9948ACCE1EC71B6E00516DE5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		9948ACD41EC71B6E00516DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		9948ACD61EC71B6E00516DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		9948ACD91EC71B6E00516DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		9948ACDB1EC71B6E00516DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9948ACE01EC71B6E00516DE5 /* ZEDownloadTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZEDownloadTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9948ACE41EC71B6E00516DE5 /* ZEDownloadTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadTests.m; sourceTree = "<group>"; };
 		9948ACE61EC71B6E00516DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		9948ACEB1EC71B6E00516DE5 /* ZEDownloadUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZEDownloadUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		9948ACEF1EC71B6E00516DE5 /* ZEDownloadUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadUITests.m; sourceTree = "<group>"; };
 		9948ACF11EC71B6E00516DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		9948AD001EC71E8300516DE5 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
-		9948AD011EC71E8300516DE5 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
-		9948AD061EC7239A00516DE5 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
-		9948AD071EC7239A00516DE5 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
-		9948AD0F1EC72FEE00516DE5 /* ZEDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEDownloadManager.h; sourceTree = "<group>"; };
-		9948AD101EC72FEE00516DE5 /* ZEDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadManager.m; sourceTree = "<group>"; };
-		9948AD111EC72FEE00516DE5 /* ZEDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEDownloadOperation.h; sourceTree = "<group>"; };
-		9948AD121EC72FEE00516DE5 /* ZEDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadOperation.m; sourceTree = "<group>"; };
-		9948AD181EC85D4300516DE5 /* DownloadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewCell.h; sourceTree = "<group>"; };
-		9948AD191EC85D4300516DE5 /* DownloadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewCell.m; sourceTree = "<group>"; };
-		9948AD1A1EC85D4300516DE5 /* DownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewController.h; sourceTree = "<group>"; };
-		9948AD1B1EC85D4300516DE5 /* DownloadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewController.m; sourceTree = "<group>"; };
-		9948AD1E1EC86BF300516DE5 /* ZEDownloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZEDownloadModel.h; path = ../ZEDownloadModel.h; sourceTree = "<group>"; };
-		9948AD1F1EC86BF300516DE5 /* ZEDownloadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZEDownloadModel.m; path = ../ZEDownloadModel.m; sourceTree = "<group>"; };
+		9950EAD41ED3171A0063DEB5 /* NSURLSession+CorrectResumData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSURLSession+CorrectResumData.h"; sourceTree = "<group>"; };
+		9950EAD51ED3171A0063DEB5 /* NSURLSession+CorrectResumData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSURLSession+CorrectResumData.m"; sourceTree = "<group>"; };
+		9989E2A01ED1F46E00788D15 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		9989E2A11ED1F46E00788D15 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		9989E2A21ED1F46E00788D15 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		9989E2A41ED1F46E00788D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		9989E2A61ED1F46E00788D15 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		9989E2A81ED1F46E00788D15 /* DownloadTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewCell.h; sourceTree = "<group>"; };
+		9989E2A91ED1F46E00788D15 /* DownloadTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewCell.m; sourceTree = "<group>"; };
+		9989E2AA1ED1F46E00788D15 /* DownloadTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DownloadTableViewController.h; sourceTree = "<group>"; };
+		9989E2AB1ED1F46E00788D15 /* DownloadTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DownloadTableViewController.m; sourceTree = "<group>"; };
+		9989E2AD1ED1F46E00788D15 /* HomeTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewCell.h; sourceTree = "<group>"; };
+		9989E2AE1ED1F46E00788D15 /* HomeTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewCell.m; sourceTree = "<group>"; };
+		9989E2AF1ED1F46E00788D15 /* HomeTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeTableViewController.h; sourceTree = "<group>"; };
+		9989E2B01ED1F46E00788D15 /* HomeTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeTableViewController.m; sourceTree = "<group>"; };
+		9989E2B11ED1F46E00788D15 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		9989E2B21ED1F46E00788D15 /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		9989E2B41ED1F46E00788D15 /* ZEDownloadManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEDownloadManager.h; sourceTree = "<group>"; };
+		9989E2B51ED1F46E00788D15 /* ZEDownloadManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadManager.m; sourceTree = "<group>"; };
+		9989E2B61ED1F46E00788D15 /* ZEDownloadOperation.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEDownloadOperation.h; sourceTree = "<group>"; };
+		9989E2B71ED1F46E00788D15 /* ZEDownloadOperation.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEDownloadOperation.m; sourceTree = "<group>"; };
+		9989E2B81ED1F46E00788D15 /* ZEDownloadModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ZEDownloadModel.h; path = ZEDownload/ZEDownloadModel.h; sourceTree = SOURCE_ROOT; };
+		9989E2B91ED1F46E00788D15 /* ZEDownloadModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ZEDownloadModel.m; path = ZEDownload/ZEDownloadModel.m; sourceTree = SOURCE_ROOT; };
+		9989E2C81ED1F59300788D15 /* ZEFileUtils.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZEFileUtils.h; sourceTree = "<group>"; };
+		9989E2C91ED1F59300788D15 /* ZEFileUtils.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZEFileUtils.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,7 +106,7 @@
 		9948ACBE1EC71B6E00516DE5 = {
 			isa = PBXGroup;
 			children = (
-				9948ACC91EC71B6E00516DE5 /* ZEDownload */,
+				9989E29F1ED1F46E00788D15 /* ZEDownload */,
 				9948ACE31EC71B6E00516DE5 /* ZEDownloadTests */,
 				9948ACEE1EC71B6E00516DE5 /* ZEDownloadUITests */,
 				9948ACC81EC71B6E00516DE5 /* Products */,
@@ -114,31 +121,6 @@
 				9948ACEB1EC71B6E00516DE5 /* ZEDownloadUITests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		9948ACC91EC71B6E00516DE5 /* ZEDownload */ = {
-			isa = PBXGroup;
-			children = (
-				9948ACFE1EC71BB200516DE5 /* ZEDownload */,
-				9948ACFD1EC71BA100516DE5 /* Download */,
-				9948ACFF1EC71E0F00516DE5 /* Home */,
-				9948ACCD1EC71B6E00516DE5 /* AppDelegate.h */,
-				9948ACCE1EC71B6E00516DE5 /* AppDelegate.m */,
-				9948ACD31EC71B6E00516DE5 /* Main.storyboard */,
-				9948ACD61EC71B6E00516DE5 /* Assets.xcassets */,
-				9948ACD81EC71B6E00516DE5 /* LaunchScreen.storyboard */,
-				9948ACDB1EC71B6E00516DE5 /* Info.plist */,
-				9948ACCA1EC71B6E00516DE5 /* Supporting Files */,
-			);
-			path = ZEDownload;
-			sourceTree = "<group>";
-		};
-		9948ACCA1EC71B6E00516DE5 /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				9948ACCB1EC71B6E00516DE5 /* main.m */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		9948ACE31EC71B6E00516DE5 /* ZEDownloadTests */ = {
@@ -159,39 +141,68 @@
 			path = ZEDownloadUITests;
 			sourceTree = "<group>";
 		};
-		9948ACFD1EC71BA100516DE5 /* Download */ = {
+		9989E29F1ED1F46E00788D15 /* ZEDownload */ = {
 			isa = PBXGroup;
 			children = (
-				9948AD181EC85D4300516DE5 /* DownloadTableViewCell.h */,
-				9948AD191EC85D4300516DE5 /* DownloadTableViewCell.m */,
-				9948AD1A1EC85D4300516DE5 /* DownloadTableViewController.h */,
-				9948AD1B1EC85D4300516DE5 /* DownloadTableViewController.m */,
-			);
-			path = Download;
-			sourceTree = "<group>";
-		};
-		9948ACFE1EC71BB200516DE5 /* ZEDownload */ = {
-			isa = PBXGroup;
-			children = (
-				9948AD0F1EC72FEE00516DE5 /* ZEDownloadManager.h */,
-				9948AD101EC72FEE00516DE5 /* ZEDownloadManager.m */,
-				9948AD111EC72FEE00516DE5 /* ZEDownloadOperation.h */,
-				9948AD121EC72FEE00516DE5 /* ZEDownloadOperation.m */,
+				9989E2C71ED1F4B200788D15 /* ZEFileUtils */,
+				9989E2B31ED1F46E00788D15 /* ZEDownload */,
+				9989E2A71ED1F46E00788D15 /* Download */,
+				9989E2AC1ED1F46E00788D15 /* Home */,
+				9989E2A01ED1F46E00788D15 /* AppDelegate.h */,
+				9989E2A11ED1F46E00788D15 /* AppDelegate.m */,
+				9989E2A21ED1F46E00788D15 /* Assets.xcassets */,
+				9989E2A31ED1F46E00788D15 /* LaunchScreen.storyboard */,
+				9989E2A51ED1F46E00788D15 /* Main.storyboard */,
+				9989E2B11ED1F46E00788D15 /* Info.plist */,
+				9989E2B21ED1F46E00788D15 /* main.m */,
 			);
 			path = ZEDownload;
 			sourceTree = "<group>";
 		};
-		9948ACFF1EC71E0F00516DE5 /* Home */ = {
+		9989E2A71ED1F46E00788D15 /* Download */ = {
 			isa = PBXGroup;
 			children = (
-				9948AD001EC71E8300516DE5 /* HomeTableViewController.h */,
-				9948AD011EC71E8300516DE5 /* HomeTableViewController.m */,
-				9948AD061EC7239A00516DE5 /* HomeTableViewCell.h */,
-				9948AD071EC7239A00516DE5 /* HomeTableViewCell.m */,
-				9948AD1E1EC86BF300516DE5 /* ZEDownloadModel.h */,
-				9948AD1F1EC86BF300516DE5 /* ZEDownloadModel.m */,
+				9989E2A81ED1F46E00788D15 /* DownloadTableViewCell.h */,
+				9989E2A91ED1F46E00788D15 /* DownloadTableViewCell.m */,
+				9989E2AA1ED1F46E00788D15 /* DownloadTableViewController.h */,
+				9989E2AB1ED1F46E00788D15 /* DownloadTableViewController.m */,
+			);
+			path = Download;
+			sourceTree = "<group>";
+		};
+		9989E2AC1ED1F46E00788D15 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				9989E2AD1ED1F46E00788D15 /* HomeTableViewCell.h */,
+				9989E2AE1ED1F46E00788D15 /* HomeTableViewCell.m */,
+				9989E2AF1ED1F46E00788D15 /* HomeTableViewController.h */,
+				9989E2B01ED1F46E00788D15 /* HomeTableViewController.m */,
 			);
 			path = Home;
+			sourceTree = "<group>";
+		};
+		9989E2B31ED1F46E00788D15 /* ZEDownload */ = {
+			isa = PBXGroup;
+			children = (
+				9989E2B41ED1F46E00788D15 /* ZEDownloadManager.h */,
+				9989E2B51ED1F46E00788D15 /* ZEDownloadManager.m */,
+				9989E2B61ED1F46E00788D15 /* ZEDownloadOperation.h */,
+				9989E2B71ED1F46E00788D15 /* ZEDownloadOperation.m */,
+				9989E2B81ED1F46E00788D15 /* ZEDownloadModel.h */,
+				9989E2B91ED1F46E00788D15 /* ZEDownloadModel.m */,
+				9950EAD41ED3171A0063DEB5 /* NSURLSession+CorrectResumData.h */,
+				9950EAD51ED3171A0063DEB5 /* NSURLSession+CorrectResumData.m */,
+			);
+			path = ZEDownload;
+			sourceTree = "<group>";
+		};
+		9989E2C71ED1F4B200788D15 /* ZEFileUtils */ = {
+			isa = PBXGroup;
+			children = (
+				9989E2C81ED1F59300788D15 /* ZEFileUtils.h */,
+				9989E2C91ED1F59300788D15 /* ZEFileUtils.m */,
+			);
+			path = ZEFileUtils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -261,7 +272,8 @@
 				TargetAttributes = {
 					9948ACC61EC71B6E00516DE5 = {
 						CreatedOnToolsVersion = 8.1;
-						ProvisioningStyle = Automatic;
+						DevelopmentTeam = W5JP3YY3XV;
+						ProvisioningStyle = Manual;
 					};
 					9948ACDF1EC71B6E00516DE5 = {
 						CreatedOnToolsVersion = 8.1;
@@ -300,9 +312,10 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9948ACDA1EC71B6E00516DE5 /* LaunchScreen.storyboard in Resources */,
-				9948ACD71EC71B6E00516DE5 /* Assets.xcassets in Resources */,
-				9948ACD51EC71B6E00516DE5 /* Main.storyboard in Resources */,
+				9989E2C21ED1F46E00788D15 /* Info.plist in Resources */,
+				9989E2BD1ED1F46E00788D15 /* Main.storyboard in Resources */,
+				9989E2BB1ED1F46E00788D15 /* Assets.xcassets in Resources */,
+				9989E2BC1ED1F46E00788D15 /* LaunchScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -327,15 +340,17 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				9948AD141EC72FEE00516DE5 /* ZEDownloadOperation.m in Sources */,
-				9948AD131EC72FEE00516DE5 /* ZEDownloadManager.m in Sources */,
-				9948AD1D1EC85D4300516DE5 /* DownloadTableViewController.m in Sources */,
-				9948ACCF1EC71B6E00516DE5 /* AppDelegate.m in Sources */,
-				9948AD021EC71E8300516DE5 /* HomeTableViewController.m in Sources */,
-				9948AD081EC7239A00516DE5 /* HomeTableViewCell.m in Sources */,
-				9948AD1C1EC85D4300516DE5 /* DownloadTableViewCell.m in Sources */,
-				9948ACCC1EC71B6E00516DE5 /* main.m in Sources */,
-				9948AD201EC86BF300516DE5 /* ZEDownloadModel.m in Sources */,
+				9989E2C51ED1F46E00788D15 /* ZEDownloadOperation.m in Sources */,
+				9989E2BA1ED1F46E00788D15 /* AppDelegate.m in Sources */,
+				9989E2CA1ED1F59300788D15 /* ZEFileUtils.m in Sources */,
+				9989E2C11ED1F46E00788D15 /* HomeTableViewController.m in Sources */,
+				9989E2BE1ED1F46E00788D15 /* DownloadTableViewCell.m in Sources */,
+				9989E2C01ED1F46E00788D15 /* HomeTableViewCell.m in Sources */,
+				9989E2C61ED1F46E00788D15 /* ZEDownloadModel.m in Sources */,
+				9950EAD61ED3171A0063DEB5 /* NSURLSession+CorrectResumData.m in Sources */,
+				9989E2C31ED1F46E00788D15 /* main.m in Sources */,
+				9989E2C41ED1F46E00788D15 /* ZEDownloadManager.m in Sources */,
+				9989E2BF1ED1F46E00788D15 /* DownloadTableViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -371,20 +386,20 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		9948ACD31EC71B6E00516DE5 /* Main.storyboard */ = {
+		9989E2A31ED1F46E00788D15 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				9948ACD41EC71B6E00516DE5 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-		9948ACD81EC71B6E00516DE5 /* LaunchScreen.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				9948ACD91EC71B6E00516DE5 /* Base */,
+				9989E2A41ED1F46E00788D15 /* Base */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		9989E2A51ED1F46E00788D15 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				9989E2A61ED1F46E00788D15 /* Base */,
+			);
+			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -484,10 +499,15 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = W5JP3YY3XV;
 				INFOPLIST_FILE = ZEDownload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ze230123.ZEDownload;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoujie.ZEDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "248650a1-2814-4086-bd24-8192a74b3a8c";
+				PROVISIONING_PROFILE_SPECIFIER = Development;
 			};
 			name = Debug;
 		};
@@ -495,10 +515,14 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = W5JP3YY3XV;
 				INFOPLIST_FILE = ZEDownload/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.1;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = com.ze230123.ZEDownload;
+				PRODUCT_BUNDLE_IDENTIFIER = com.shoujie.ZEDownload;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "248650a1-2814-4086-bd24-8192a74b3a8c";
+				PROVISIONING_PROFILE_SPECIFIER = Development;
 			};
 			name = Release;
 		};
@@ -567,6 +591,7 @@
 				9948ACF61EC71B6E00516DE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9948ACF71EC71B6E00516DE5 /* Build configuration list for PBXNativeTarget "ZEDownloadTests" */ = {
 			isa = XCConfigurationList;
@@ -575,6 +600,7 @@
 				9948ACF91EC71B6E00516DE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		9948ACFA1EC71B6E00516DE5 /* Build configuration list for PBXNativeTarget "ZEDownloadUITests" */ = {
 			isa = XCConfigurationList;
@@ -583,6 +609,7 @@
 				9948ACFC1EC71B6E00516DE5 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

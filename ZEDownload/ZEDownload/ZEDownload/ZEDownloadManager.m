@@ -7,6 +7,7 @@
 //
 
 #import "ZEDownloadManager.h"
+#import "ZEFileUtils.h"
 
 @interface ZEDownloadManager() <NSURLSessionDelegate>
 /** 共享的session */
@@ -38,7 +39,9 @@
     }
     return self;
 }
-
+- (void)dealloc {
+    NSLog(@"dealloc %@",self.description);
+}
 #pragma mark- Public method
 - (void)addDownLoad:(ZEDownloadModel *)model {
     [_downloadArr addObject:model];
@@ -154,7 +157,7 @@
 
     NSDate *currentDate = [NSDate date];
     NSTimeInterval interval = [currentDate timeIntervalSinceDate:downloadTask.downloadModel.date];
-    if (downloadTask.downloadModel.date == nil || interval > 1 || totalBytesWritten == totalBytesExpectedToWrite) {
+    if (downloadTask.downloadModel.date == nil || interval >= 1 || totalBytesWritten == totalBytesExpectedToWrite) {
         double progress = (double)totalBytesWritten / totalBytesExpectedToWrite;
         NSString *speedStr = [NSByteCountFormatter stringFromByteCount:totalBytesWritten - downloadTask.downloadModel.bytesWritten
                                                             countStyle:NSByteCountFormatterCountStyleMemory];
@@ -163,6 +166,7 @@
                                                                countStyle:NSByteCountFormatterCountStyleMemory];
         NSString *totalSize = [NSByteCountFormatter stringFromByteCount:totalBytesExpectedToWrite
                                                              countStyle:NSByteCountFormatterCountStyleMemory];
+        
         downloadTask.downloadModel.bytesWritten = totalBytesWritten;
         downloadTask.downloadModel.speedString = speedString;
         downloadTask.downloadModel.progress = progress;
@@ -173,12 +177,17 @@
 }
 
 - (void)URLSession:(NSURLSession *)session downloadTask:(NSURLSessionDownloadTask *)downloadTask didFinishDownloadingToURL:(NSURL *)location {
-    NSURL *documentsDirectoryURL = [[NSFileManager defaultManager] URLForDirectory:NSDocumentDirectory inDomain:NSUserDomainMask appropriateForURL:nil create:NO error:nil];
-    NSURL *filename = [documentsDirectoryURL URLByAppendingPathComponent:downloadTask.response.suggestedFilename];
-    [[NSFileManager defaultManager] moveItemAtURL:location toURL:filename error:nil];
-    NSLog(@"fileUrl : %@",filename.absoluteString);
-    downloadTask.downloadModel.localPath = filename.absoluteString;
-    downloadTask.downloadModel.state = ZEDownloadStateCompleted;
+    
+    [ZEFileUtils createDirctory:@"Downloads"];
+    
+    NSString *homePath = [ZEFileUtils getDocuments];
+    NSString *fileName = [@"Downloads" stringByAppendingPathComponent:downloadTask.response.suggestedFilename];
+    NSString *filePath = [homePath stringByAppendingPathComponent:fileName];
+    
+    if ([ZEFileUtils moveFileAtPath:location.absoluteString toPath:filePath]) {
+        downloadTask.downloadModel.localPath = fileName;
+        downloadTask.downloadModel.state = ZEDownloadStateCompleted;
+    }
     ZEDownloadOperation *operation = [self findOperationInDownloadQueue:downloadTask.downloadModel];
     [self moveToCompleteArr:operation];
     [self nextDownload];
@@ -193,6 +202,7 @@
         ZEDownloadOperation *operation = [self findOperationInDownloadQueue:task.downloadModel];
         [operation downloadFinished];
     }
+    
 }
 
 #pragma mark- getter and setter
@@ -213,7 +223,7 @@
         /**
          * 创建NSURLSessionConfiguration类的对象, 这个对象被用于创建NSURLSession类的对象.
          */
-        NSURLSessionConfiguration *configura = [NSURLSessionConfiguration defaultSessionConfiguration];
+        NSURLSessionConfiguration *configura = [NSURLSessionConfiguration backgroundSessionConfigurationWithIdentifier:@"com.background"];
         /**
          * 2. 创建NSURLSession的对象.
          * 参数一 : NSURLSessionConfiguration类的对象.(第1步创建的对象.)

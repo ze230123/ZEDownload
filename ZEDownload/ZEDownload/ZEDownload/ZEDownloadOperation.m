@@ -7,6 +7,7 @@
 //
 
 #import "ZEDownloadOperation.h"
+#import "NSURLSession+CorrectResumData.h"
 #import <objc/runtime.h>
 
 
@@ -54,7 +55,8 @@ static const void *downloadModelKey = "downloadModelKey";
     if (!self.model.resumeData) {
         self.task = [self.session downloadTaskWithRequest:self.request];
     } else {
-        self.task = [self.session downloadTaskWithResumeData:self.model.resumeData];
+//        self.task = [self.session downloadTaskWithResumeData:self.model.resumeData];
+        self.task = [self.session downloadTaskWithCorrectResumeData:self.model.resumeData];
     }
     
     self.task.downloadModel = self.model;
